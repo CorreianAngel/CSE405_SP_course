@@ -3,8 +3,8 @@
      Email:006009584@coyote.csusb.edu
      File:index.html
 	 Description: This is the main webpage file displaying the menu for a survey using 
-	 jsondata.js, style.css,index.js, and index.html link together to produce it as a web application.
-	 References: iamevenstronger, https://github.com/iamevenstronger/quiz/tree/master/js
+	 jsonData.js, style.css,index.js, and index.html link together to produce it as a web application.
+	 References:
 -->
 <!DOCTYPE>
 <html>
@@ -13,19 +13,16 @@
  <link rel="stylesheet" href="style.css">
  </head>
  <body>
-  <h1>Welcome to My Analasysis Survey.</h1>
+  <h1>Welcome to My Analasys Survey.</h1>
+  <h2>These questions are designed to help us understand you as a user
+      while slightly testing your knowledge.
+  </h2>
   <br>
+  <!--JavaScript scripts and file links -->
   <button onclick="quizButton()">Continue</button>
-  <!--JavaScript code -->
-  <p id="click"></p>
-  <script>
-  function quizButton()
-  {
-	  console.log("Button Pressed");
-  }
-   
-  </script>
-
+  <p id="question"></p>
+  <script src="index.js"></script>
+  <script src="jsonData.js"></script>
  </body>
 </html>
 
