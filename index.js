@@ -1,4 +1,5 @@
-function quizButton()
-  {
-	  console.log("Button Pressed. First question generated.");
-  } 
+function generate()
+{
+   console.log("Button Pressed. First question generated."); 
+}
+
