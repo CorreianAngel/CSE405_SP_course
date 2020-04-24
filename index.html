@@ -1,35 +1,37 @@
 <!--Main html page -->
 <!-- Author:Alex Correia
      Email:006009584@coyote.csusb.edu
-     File:index.html
+     Files:index.html,index.js,style.css
 	 Description: This is the main webpage file displaying the menu for a survey using 
 	 style.css,index.js, and index.html link together to produce it as a web application.
 	 need more research, 4-15-20 horrible struggle.
-	 References:
+	 References: 
+	 Author: Web Dev Simplified
+	 Files: index.html,style.css,script.js
+	 link: https://github.com/WebDevSimplified/JavaScript-Quiz-App
 -->
-<!DOCTYPE>
-<html lang = "en">
- <head>
- <title>Survey</title>
- <link rel="stylesheet" href="style.css">
- </head>
- <body>
-  <h1>Welcome to My Analasys Survey.</h1>
-  <h2>These questions are designed to help us understand you as a user
-      while slightly testing your knowledge.
-  </h2>
-  <br>
-  <!--JavaScript/JSON syntax, scripts, code, and file links -->
-  <div> <!-- multiple choice answers linked to function generate() index.js-->
-   <p id="question"></p>
-   <input type="radio" id="option1" name="options" unchecked>
-    <span id="optt1"></span>
-   <input type="radio" id="option2" name="options" unchecked>
-    <span id="optt2"></span>
-   <br>
-   <button onclick="startQuiz()">Continue</button>
-  </div>
-  <script defer src="index.js"></script>
- </body>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<link href="style.css" rel="stylesheet">
+	<script defer src="index.js"></script>
+    <title>Quiz</title>
+</head>
+<body>
+  <h1>Welcome to my Survey</h1>
+  <div class="container"> <!-- Holds the data for the questions-container,questions, and answer buttons.-->
+   <div id="question-container" class="hide">
+    <div id="question">Question</div>
+	 <div id="answer-buttons" class="btn-grid">
+	  <button class="btn">Answer 1</button>
+	  <button class="btn">Answer 2</button>
+	  <button class="btn">Answer 3</button>
+	  <button class="btn">Answer 4</button>
+	 </div>
+   </div>
+   <div class="controls">
+    <button id="start-btn" class="start-btn btn">Start</button>
+	<button id="next-btn" class="next-btn btn hide">Next</button>
+</body>
 </html>
-
