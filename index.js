@@ -6,6 +6,8 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
+
+
 let shuffledQuestions, currentQuestionIndex  //randomly shuffles questions whenever user restarts quiz
 
 startButton.addEventListener('click', startQuiz) //calls the startQuiz function when start button is clicked
@@ -28,6 +30,7 @@ function setNextQuestion()
 {
    resetState()
    showQuestion(shuffledQuestions[currentQuestionIndex])
+  
 }
 
 //reveals the quesiton and answers generated from the const array of questions and answers.
@@ -84,7 +87,7 @@ function selectAnswer(e)
   nextButton.classList.remove('hide')
 }
 
-//calculates answer to alter colors of the background and buttons revealing if the user was right equalling green or wrong equalling red.
+//Calculates answer to alter colors of the background and buttons revealing if the user was right equalling green or wrong equalling red.
 //The options are also revealed in green and red showing green as the correct answer and red for the wrong answer.
 function setStatusClass(element, correct)
 {
@@ -106,24 +109,57 @@ function clearStatusClass(element)
 }
 
 //The questions that generate on webpage.
-//I do plan to modify these questions more in a JSON format and using json data.
 const questions =
 [
   {
-    question: "How about this question?.",
+    question: "What is your favorate kind of animal",
     answers:[
-       { text: 'yes', correct: true },
-       { text: 'no', wrong: false },
+       { text: 'Dogs', correct: true },
+       { text: 'Cats', correct: true },
+       { text: 'Birds', correct: true },
+       { text: 'Reptiles', correct: true },
+       { text: 'Bugs', correct: true }
+       
+       
     ]
   },
   {
-    question: "Did this question pop up for the first time?",
+    question: "What paticular sport did your lifetime in your lifetime?",
     answers:[
-       { text: 'yes', correct: true },
-       { text: 'no', correct: true },
-       { text: 'I think so', correct: true },
-       { text: 'I dont feel like answering', wrong: false }
+       { text: 'BasketBall', correct: true },
+       { text: 'Baseball', correct: true },
+       { text: 'Football', correct: true },
+       { text: 'Soccer', correct: true },
+       { text: 'none of the above', correct: true },
+       { text: 'all of the above', correct: true }
+       
+    ]
+  },
+  {
+    question: "Which of these is considered a high level computer language?",
+    answers:[
+       { text: 'Assembly Language', wrong: false },
+       { text: 'Machine Language', wrong: false },
+       { text: 'Basic', correct: true },
+       { text: 'none of the above', wrong: false },
+       { text: 'all of the above', wrong: false }
+       
+    ]
+  },
+  {
+    question: "Which war was the Emancipation Proclamation introduced in the United States?",
+    answers:[
+       { text: 'War of 1812', wrong: false },
+       { text: 'Spanish American War', wrong: false },
+       { text: 'World War One', wrong: false },
+       { text: 'Civil War', correct: true },
+       { text: 'World War Two', wrong: false }
+       
     ]
   }
 ]
+function checkAnswer()
+{
+    
+}
 

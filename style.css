@@ -6,7 +6,7 @@
 
 :root  /*backgroundcolor element for default color and correct or wrong.*/
 {
-	--hue-neutral: 2001;
+	--hue-neutral: 2501;
 	--hue-wrong: 0;
 	--hue-correct: 145;
 }
@@ -26,7 +26,22 @@ body
 
 h1
 {
-	height: 50vh;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+h2
+{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
 }
 
 body.correct /*Changes background color to green if answer is right, body.wrong is red. same code is applied for .btn.correct and .btn.wrong */
@@ -103,3 +118,4 @@ body.wrong
 	display: none;
 
 }
+
