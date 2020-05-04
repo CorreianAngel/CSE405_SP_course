@@ -1,0 +1,22 @@
+{
+  "name": "cse405_sp_course",
+  "version": "1.0.0",
+  "description": "This is a repository for cse405 course assignments and content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorreianAngel/CSE405_SP_course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CorreianAngel/CSE405_SP_course/issues"
+  },
+  "homepage": "https://github.com/CorreianAngel/CSE405_SP_course#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

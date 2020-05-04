@@ -1,21 +1,11 @@
-const http = require('http')
-const fs = require('fs')
-const hostname = '127.0.0.1'
-const port = 3000
+const express = require('express');
+const path = require('path');
 
-const server = http.createServer(function(req, res){
-  res.writeHead(200, { 'Content-Type': 'text/html'})
-  fs.readFile('index.html', function(error, data) {
-    if (error) {
-      res.writeHead(404)
-      res.write('Error: File Not Found')
-    } else {
-      res.write(data)
-    }
-    res.end()
-   }) 
-})
+const app = express();
+app.use('/static', express.static('public'))
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-})
+app.get('/', function(res, res) {
+  res.sendFile(path.join(__dirname, '/index.html'));
+});
+
+app.listen(3000);
