@@ -158,8 +158,54 @@ const questions =
     ]
   }
 ]
-function checkAnswer()
-{
-    
-}
+//json area
+var jsonLinkData = [
 
+		{
+			"display": "JavaScript Tutorials",
+			"url": "https://www.w3schools.com/js/default.asp"
+		},
+
+		{
+			"display": "HTML Tutorials",
+			"url": "https://www.w3schools.com/html/default.asp"
+		},
+
+		{
+			"display": "CSS Tutorials",
+			"url": "https://www.w3schools.com/css/default.asp"
+		},
+
+		{
+			"display": "JSON Tutorials",
+			"url": "https://www.w3schools.com/js/js_json_intro.asp"
+		},
+
+		{
+			"display": "nodejs Download",
+			"url": "https://nodejs.org/en/"
+		},
+
+		{
+			"display": "Firebase Console",
+			"url": "https://firebase.google.com/"
+		},
+
+        {
+			"display": "Github",
+			"url": "https://github.com/"
+		}
+	];
+ myFunction(jsonLinkData);
+ 
+ function myFunction(arr)
+ {
+ 	 var out = "";
+	 var i;
+	 for(i = 0; i < arr.length; i++)
+	 {
+	   out += '<a href="' + arr[i].url + '">' +
+	   arr[i].display + '</a><br>';
+	 }
+	 document.getElementById("jsonOutput").innerHTML = out;
+ }
