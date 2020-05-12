@@ -6,7 +6,7 @@
 
 :root  /*backgroundcolor element for default color and correct or wrong.*/
 {
-	--hue-neutral: 2401;
+	--hue-neutral: 30;
 	--hue-wrong: 0;
 	--hue-correct: 145;
 }

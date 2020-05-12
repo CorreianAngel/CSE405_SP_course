@@ -204,7 +204,7 @@ var jsonLinkData = [
 	 var i;
 	 for(i = 0; i < arr.length; i++)
 	 {
-	   out += '<a href="' + arr[i].url + '">' +
+	   out += '<br><a href="' + arr[i].url + '"style="color:black;">' +
 	   arr[i].display + '</a><br>';
 	 }
 	 document.getElementById("jsonOutput").innerHTML = out;
