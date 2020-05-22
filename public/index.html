@@ -19,9 +19,18 @@
 	<script defer src="/static/index.js"></script>
 	<link href="style.css" rel="stylesheet">
 	<script defer src="index.js"></script>
+	<script defer src="FireAuth.js"></script>
     <title>Quiz</title>
 </head>
 <body>
+  <!--Firebase Auth code-->
+  <div class="main-div">
+  <h3>Send us an email and password for contribution.</h3>
+  <input type="email" placeholder="Email..." id="email_field"/>
+  <input type="password" placeholder="Password..."id="password_field"/>
+
+  <button onclick="login()">Submit</button>
+  </div>
   <div id="jsonOutput">
   </div>
   <h3 style= "text-align:left; height: 20em;">Resourceful links for server programming and web development. </h3>
