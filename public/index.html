@@ -4,11 +4,15 @@
      Files:index.html,index.js,style.css
 	 Description: This is the main webpage file displaying the menu for a survey using 
 	 style.css,index.js, and index.html link together to produce it as a web application.
-	 need more research, 4-15-20 horrible struggle.
+	 Other files are used to run on local servers using node.
+	 This also uses firebase to have a user login with email and password to a server knowing who to took the survey.
 	 References: 
 	 Author: Web Dev Simplified
 	 Files: index.html,style.css,script.js
 	 link: https://github.com/WebDevSimplified/JavaScript-Quiz-App
+	 Author: TVAC Studio
+	 Files: index.html,style.css,script.js
+	 link: https://drive.google.com/open?id=1ujD...
 -->
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -23,14 +27,21 @@
     <title>Quiz</title>
 </head>
 <body>
-  <!--Firebase Auth code-->
-  <div class="main-div">
+  <!--Firebase Auth code, idea is to send email info to server knowing who took survey-->
+  <div id= "login_div" class="main-div">
   <h3>Send us an email and password for contribution.</h3>
   <input type="email" placeholder="Email..." id="email_field"/>
   <input type="password" placeholder="Password..."id="password_field"/>
 
   <button onclick="login()">Submit</button>
   </div>
+  <!-- Currently logsout user may not use this exactly!
+  <div id="user_div" class="loggedin-div">
+  <h3>Thank you for your logging in and taking my quiz</h3>
+  <p id="user_para"></p>
+  <button onclick="logout()">Logout</button>
+  </div>
+  -->
   <div id="jsonOutput">
   </div>
   <h3 style= "text-align:left; height: 20em;">Resourceful links for server programming and web development. </h3>
