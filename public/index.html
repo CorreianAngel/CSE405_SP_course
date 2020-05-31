@@ -24,6 +24,17 @@
 	<link href="style.css" rel="stylesheet">
 	<script defer src="index.js"></script>
 	<script defer src="FireAuth.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.14.3/firebase-app.js"></script>
+    <script src="/__/firebase/7.14.3/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="/__/firebase/7.14.3/firebase-firestore.js"></script> <!--accessing firestore based off the version I have when creating this -->
     <title>Quiz</title>
 </head>
 <body>
@@ -32,7 +43,6 @@
   <h3>Send us an email and password for contribution.</h3>
   <input type="email" placeholder="Email..." id="email_field"/>
   <input type="password" placeholder="Password..."id="password_field"/>
-
   <button onclick="login()">Submit</button>
   </div>
   <!-- Currently logsout user may not use this exactly!
@@ -64,14 +74,5 @@
    <div class="controls">
     <button id="start-btn" class="start-btn btn">Start</button>
 	<button id="next-btn" class="next-btn btn hide">Next</button>
-   <!-- The core Firebase JS SDK is always required and must be listed first -->
-   <script src="/__/firebase/7.14.3/firebase-app.js"></script>
-
-   <!-- TODO: Add SDKs for Firebase products that you want to use
-		 https://firebase.google.com/docs/web/setup#available-libraries -->
-   <script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
-
-   <!-- Initialize Firebase -->
-   <script src="/__/firebase/init.js"></script>
 </body>
 </html>

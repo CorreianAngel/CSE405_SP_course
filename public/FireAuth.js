@@ -1,5 +1,11 @@
 // JavaScript source code
-
+/* FireStore database init code
+var config =
+	{
+		
+	};
+	firebase.InitializeApp(config);
+*/
 //Dont have the proper firebase files yet for firebase.auth functions.
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
