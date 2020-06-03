@@ -10,48 +10,41 @@
 	 Author: Web Dev Simplified
 	 Files: index.html,style.css,script.js
 	 link: https://github.com/WebDevSimplified/JavaScript-Quiz-App
-	 Author: TVAC Studio
-	 Files: index.html,style.css,script.js
-	 link: https://drive.google.com/open?id=1ujD...
+	 Author: Firebase David
+	 Video Tutorial: https://www.youtube.com/watch?v=-OKrloDzGpU&t=245s
+	 
 -->
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="/__/firebase/7.14.6/firebase-app.js"></script>
+    <script defer src="/__/firebase/7.14.6/firebase-auth.js"></script>
+	<script defer src="/__/firebase/7.14.6/firebase-firestore.js"></script> <!--accessing firestore based off the version I have when creating this -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script defer src="/__/firebase/7.14.6/firebase-analytics.js"></script>
+    <!-- Initialize Firebase -->
+    <script defer src="/__/firebase/init.js"></script>
 	<!--<link href="style.css" rel="stylesheet"> links file without node-->
 	<link href="/static/style.css" rel="stylesheet">
-	<script defer src="/static/index.js"></script>
 	<link href="style.css" rel="stylesheet">
-	<script defer src="index.js"></script>
+	<script defer src="/static/index.js"></script>
 	<script defer src="FireAuth.js"></script>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.14.3/firebase-app.js"></script>
-    <script src="/__/firebase/7.14.3/firebase-auth.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-		 https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.14.3/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-    <script src="/__/firebase/7.14.3/firebase-firestore.js"></script> <!--accessing firestore based off the version I have when creating this -->
+	<script defer src="index.js"></script> <!-- Causes error with event listener in index.js when "defer" is removed, same on line 23-->
     <title>Quiz</title>
 </head>
 <body>
-  <!--Firebase Auth code, idea is to send email info to server knowing who took survey-->
+  <!--Firebase Auth code, idea is to send email info to server knowing who took survey
+  Still needs improvement
   <div id= "login_div" class="main-div">
-  <h3>Send us an email and password for contribution.</h3>
+  <h3>Login or signup before starting the quiz.</h3>
   <input type="email" placeholder="Email..." id="email_field"/>
   <input type="password" placeholder="Password..."id="password_field"/>
-  <button onclick="login()">Submit</button>
+  <button onclick "login()">Login</button>
+  <button id="btnLogout" class="btn button-Logout hide">Logout</button>
   </div>
-  <!-- Currently logsout user may not use this exactly!
-  <div id="user_div" class="loggedin-div">
-  <h3>Thank you for your logging in and taking my quiz</h3>
-  <p id="user_para"></p>
-  <button onclick="logout()">Logout</button>
-  </div>
-  -->
+ -->
   <div id="jsonOutput">
   </div>
   <h3 style= "text-align:left; height: 20em;">Resourceful links for server programming and web development. </h3>

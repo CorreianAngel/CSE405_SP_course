@@ -1,4 +1,6 @@
 // JavaScript source code
+
+
 //global constants for the buttons, question elements, and answer elemnts
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
