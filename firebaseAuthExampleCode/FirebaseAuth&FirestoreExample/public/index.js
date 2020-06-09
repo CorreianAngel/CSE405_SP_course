@@ -34,6 +34,24 @@ firebase.auth().signInWithEmailAndPassword(userEmail, userPassword).catch(functi
   // ...
  });
 }
+
+function signup()
+{
+  var userEmail = document.getElementById("email_field").value;
+  var userPassword = document.getElementById("password_field").value;
+ 
+
+ firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+
+  window.alert("Error :" + errorMessage);
+  console.log("Button Clicked.");
+  // ...
+});
+}
+
 function logout()
 {
    firebase.auth().signOut();
