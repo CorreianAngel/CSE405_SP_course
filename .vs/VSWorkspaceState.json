@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\firebaseAuthExampleCode",
+    "\\firebaseAuthExampleCode\\FirebaseAuth&FirestoreExample",
+    "\\firebaseAuthExampleCode\\FirebaseAuth&FirestoreExample\\public",
     "\\public"
   ],
-  "SelectedNode": "\\public\\index.js",
+  "SelectedNode": "\\firebaseAuthExampleCode\\FirebaseAuth&FirestoreExample\\public\\style.css",
   "PreviewInSolutionExplorer": false
 }

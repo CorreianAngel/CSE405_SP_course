@@ -1,7 +1,7 @@
 ﻿<!-- Author:Alex Correia
      Email:006009584@coyote.csusb.edu
      File:index.html
-	 Description: This is a example webpage specifically designed to work on firebase authentication 
+	 Description: This is a example webpage specifically designed to work on firebase authentication and adding data to a database 
 	 for CSE 405 default course assignments project for my CSE_405_SP_Course repo in github
 	 References:
 	 Author: Web Dev Simplified
@@ -20,6 +20,13 @@
     <title>FirebaseAuthentication Example Code</title>
 </head>
 <body>
+ <div class="secondcontainer">
+  <h3>Please enter a userID, first name, and age for the record.</h3>
+  <input type="text" placeholder="UserID..." id="userId">
+  <input type="firstname" placeholder="Firstname..." id="firstName">
+  <input type="age" placeholder="Age..." id="ageNumber">
+  <button class="btn" id="enterBtn">Enter</button>
+ </div>
  <div class="container">
   <div id="login_div" class="main-div">
   <h3>Welcome to my example login app</h3>

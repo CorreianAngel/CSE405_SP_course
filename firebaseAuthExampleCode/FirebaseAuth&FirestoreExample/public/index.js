@@ -1,3 +1,23 @@
+//Firestore adding Data code
+const userId = document.getElementById('userId');
+const firstName = document.getElementById('firstName');
+const age = document.getElementById('ageNumber');
+const enterBtn = document.getElementById('enterBtn');
+
+const database = firebase.firestore();
+const userList = database.collection('users');
+
+enterBtn.addEventListener('click', e =>
+{
+   e.preventDefault();
+   userList.doc(userId.value).set({
+     first_name: firstName.value,
+     age: age.value
+
+   })
+    .then(() => {console.log('Data written Successfully');})
+    .catch(error => {console.error(error)});
+});
 //Firebase authentication code here
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {

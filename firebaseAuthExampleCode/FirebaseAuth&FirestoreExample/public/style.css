@@ -39,6 +39,22 @@ body
 	width: 75%;
 }
 
+.secondcontainer
+{
+	width: 500px;
+	max-width: 30%;
+	background-color: white;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 0 0 10px 2px;
+}
+
+.secondcontainer input
+{
+	display: block;
+	width: 75%;
+}
+
 .controls
 {
 	display: flex;
