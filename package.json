@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/CorreianAngel/CSE405_SP_course#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   }
 }
